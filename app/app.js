@@ -12,13 +12,13 @@ respExitButton.addEventListener('click', () => {
 
 
 
-const careerHeaders = document.querySelectorAll('.career-item-header');
+const careerItemHeaders = document.querySelectorAll('.career-item-header');
 
-careerHeaders.forEach(careerHeader => {
-    careerHeader.addEventListener("click", event => {
-        careerHeader.classList.toggle("active");
-        const accordionItemBody = careerHeaders.nextElementSibling;
-        if (careerHeaders.classList.contains("active")) {
+careerItemHeaders.forEach(careerItemHeader => {
+    careerItemHeader.addEventListener("click", event => {
+        careerItemHeader.classList.toggle("active");
+        const accordionItemBody = careerItemHeader.nextElementSibling;
+        if (careerItemHeader.classList.contains("active")) {
             accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
         } else {
             accordionItemBody.style.maxHeight = 0;
